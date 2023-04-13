@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 
 public class ArrayListt {
@@ -20,6 +21,11 @@ public class ArrayListt {
         for(int i=0;i< list.size();i++){
             System.out.println(list.get(i));
         }
+
+        //sorting array
+        int[] array = {1, 2, 3, -1, -2, 4};
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
 
     }
 }

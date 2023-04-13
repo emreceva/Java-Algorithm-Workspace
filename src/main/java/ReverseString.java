@@ -6,7 +6,7 @@ public class ReverseString {
 
     @Test
     public void run(){
-
+        System.out.println(reverse("Software testing"));
     }
 
     public void reverseStringWithoutUsingStringMethods(String str) {
@@ -36,6 +36,18 @@ public class ReverseString {
             reverse = reverse + str.charAt(i);
         }
         System.out.println(reverse);
+    }
+
+    public String reverse(String str){
+        if(str == null) throw new IllegalStateException("Null is not valid  input");
+
+        StringBuilder out = new StringBuilder();
+
+        char[] chars = str.toCharArray();
+        for(int i = chars.length-1;i>=0;i--)
+            out.append(chars[i]);
+
+        return out.toString();
     }
 
 
